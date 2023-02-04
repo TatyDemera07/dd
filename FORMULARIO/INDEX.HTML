@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function modal()
+        {
+    
+            var respuesta=confirm("Estas seguro de enviar los datos");
+    
+            if (respuesta==true)
+        {
+            return true;
+    
+        }
+        else
+        {
+            return false;
+        }
+    }
+    </script>
+    <div class="contenedor">
+    <form action="formulario" method="get">
+        <h1>FORMULARIO</h1>
+        <p>Nombre: <input type="text" name="nombre" size="40"></p>
+        <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+        <p>Correo Electronico: <input typer="text" email="correo" size="40"></p>
+        <p>Sexo:
+            <br>
+          <input type="radio" name="hm" value="h"> Hombre
+          <input type="radio" name="hm" value="m"> Mujer
+        </p>
+        <p>
+          <input type="submit" value="Enviar" onclick="return modal()">
+          <input type="reset" value="Borrar" onclick="return modal()">
+        </p>
+      </form>
+      </div>
+</body>

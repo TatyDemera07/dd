@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>MODAL 4</title>
+</head>
+<script type="text/javascript">
+    function modal()
+    {
+
+        var respuesta=confirm("Cerrar ventana");
+
+        if (respuesta==true)
+    {
+        return true;
+
+    }
+    else
+    {
+        return false;
+    }
+}
+</script>
+<body>
+    <input type="checkbox"id="btn-modal">
+    <label for="btn-modal" class="lbl-modal">EJECUCION</label>
+    <div class="modal">
+        <div class="contenedor">
+            <header>HOLAAAAAAAAAAAAAAAA¡!</header>
+            <label for="btn-modal" onclick="return modal()" >X</label>
+            <div class="contenido">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
